@@ -4,36 +4,6 @@ body {
     font-family: "Oswald", sans-serif;
 }
 
-@media (max-width: 400px) {
-    .container {
-        width: 300px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-    .head {
-        grid-column: 1 / -1;
-        grid-row: 1;
-    }
-    .px {
-        grid-column: 1;
-        grid-row: 2 ;
-    }
-    .em {
-        grid-column: 2;
-        grid-row: 2 ;
-    }
-    .value {
-        grid-column: 1 / -1;
-        grid-row: 3;
-    }
-    .reset {
-        grid-column: 1 / -1;
-        grid-row: 4;
-        margin-bottom: 15px;
-    }
-}
-
 .container {
     width: 500px;
     background-color: #283618;
@@ -99,3 +69,32 @@ button:hover {
     border: 2px solid whitesmoke;
 }
 
+@media (max-width: 400px) {
+    .container {
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .head {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+    .px {
+        grid-column: 1;
+        grid-row: 2 ;
+    }
+    .em {
+        grid-column: 2;
+        grid-row: 2 ;
+    }
+    .value {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+    .reset {
+        grid-column: 1 / -1;
+        grid-row: 4;
+        margin-bottom: 15px;
+    }
+}
